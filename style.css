@@ -1,3 +1,7 @@
+body {
+    padding-top: 75px; /* Para que o menu de navegação não fique por cima do conteúdo inicial do body. */
+}
+
 .box-shadow {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 2px 8px 0 rgba(0, 0, 0, 0.5);
 }
