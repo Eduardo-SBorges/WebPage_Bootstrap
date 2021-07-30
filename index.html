@@ -55,7 +55,7 @@
                             <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin" href="#">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
@@ -64,6 +64,41 @@
                 </div>
             </div>
         </nav>
+
+        <!------------------------------------------------------------------------------->
+        <!-------------------------------- MODAL ---------------------------------------->
+        <!------------------------------------------------------------------------------->
+
+        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLoginLabel">Entre na sua Conta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="loginEmail" class="form-label">E-mail</label>
+                          <input type="email" class="form-control" id="loginEmail">
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputPassword" class="form-label">Senha</label>
+                          <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="check-box">
+                          <label class="form-check-label" for="check-box">Lembrar-me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar na conta</button>
+                        <div id="passwordHelp" class="form-text">Esqueceu a senha?
+                            <a href="$">Clique aqui.</a>
+                        </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!------------------------------------------------------------------------------->
         <!--------------------------- MENU CARROSSEL ------------------------------------>
@@ -186,9 +221,9 @@
             </div>
         </section>
 
-        <!---------------------------------------------------------------------------------->
-        <!-------------------------------- BLOCKQUOTE -------------------------------------->
-        <!---------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------->
+        <!-------------------------------- BLOCKQUOTE ----------------------------------->
+        <!------------------------------------------------------------------------------->
 
         <section id="home-quote" class="p-md-5">
             <blockquote class="blockquote text-center text-white p-md-5 p-3">
@@ -199,9 +234,9 @@
             </blockquote>
         </section>
 
-        <!---------------------------------------------------------------------------------->
-        <!-------------------------------- ACCORDION --------------------------------------->
-        <!---------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------->
+        <!--------------------------------- ACCORDION ----------------------------------->
+        <!------------------------------------------------------------------------------->
 
         <section class="container">
             <div class="my-5 text-center">
@@ -335,9 +370,9 @@
             </div>
         </section>
 
-        <!---------------------------------------------------------------------------------->
-        <!---------------------------------- FOOTER ---------------------------------------->
-        <!---------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------->
+        <!---------------------------------- FOOTER ------------------------------------->
+        <!------------------------------------------------------------------------------->
 
         <footer class="bg-dark text-white">
             <div class="container py-4">
@@ -399,9 +434,9 @@
             </div>
         </footer>
 
-        <!---------------------------------------------------------------------------------->
-        <!--------------------------------- SCRIPTS ---------------------------------------->
-        <!---------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------->
+        <!--------------------------------- SCRIPTS ------------------------------------->
+        <!------------------------------------------------------------------------------->
 
         <script type="text/javascript" src="bootstrap.js"></script>
         <script type="text/javascript" src="app.js"></script>
